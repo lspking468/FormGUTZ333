@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.primaryTemplate {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.secondTemplate {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-out-left {
+    animation: slideOutLeft 1.0s forwards;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.0s forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 1.0s forwards;
+}
+.slide-in-left {
+    animation: slideInLeft 1.0s forwards;
+}
+
+.primaryTemplate .formSignin, .secondTemplate .formSignUp {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #c2bbbb, #fff);
+}
+
+main form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+main form h1, main .panel h1  {
+    color: #545747;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main form p, main .panel p {
+    color: #545747;
+    height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main form .inputSpan span{
+    display: none;
+    color: #ff0000;
+}
+
+main form .inputField {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+main form .inputField img {
+    position: absolute;
+    margin-inline-start: 9.9975px;
+}
+main form .inputField input, main form .repeatPassowordInput input {
+    width: 231.74px;
+    height: 30.88px;
+    padding: 3px;
+    padding-inline-start: 36.99px;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    background-image: linear-gradient(45deg, #dfceb8, #E9B99C);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 4px 10px #0000004d
+}
+
+main form .repeatPassowordInput input {
+    padding-inline-start: 12.998px;
+    display: none;
+}
+
+main form .inputField input:focus, main form .repeatPassowordInput input:focus {
+    border: 2px solid #545747;
+    width: 234.154px;
+    height: 34.166px;
+}
+
+main form .forgotPassword {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+main form .forgotPassword a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+main form .socialMedias {
+    display: flex;
+    gap: 7.5647px;
+}
+
+main form .socialMedias a img:hover {
+    scale: 111%;
+}
+
+main form button {
+    border: none;
+    border-radius: 12px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.78s;
+    color: #2ee52e;
+}
+
+main form button:hover {
+    scale: 107%;
+    transition: 0.78s;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+main .panel {
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #2ee52e, #545747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+main .panel img {
+    box-shadow: 2px 4px 10px #545747;
+    border-radius: 100%;
+}
+
+main .panel button {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    transition: 0.78s;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+main .panel button:hover {
+    border: none;
+    scale: 107%;
+    transition: 0.78s;
+    background-color: #fff;
+    color: #2ee52e;
+}

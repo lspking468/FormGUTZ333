@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: linear-gradient(45deg, #2ee52e, #545747);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+html body main h1 {
+    color: #545747;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    text-shadow: 2px 4px 10px #545747;
+}
+
+html body main button {
+    border: none;
+    padding: 5px;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.78s;
+}
+html body main button:hover {
+    transition: 0.78s;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #ffff;
+}

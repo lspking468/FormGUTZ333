@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUTZ 333 / form</title>
+    <link rel="stylesheet" href="../static/css/login&register.css">
+    <link rel="icon" href="../static/imgs/GUTZ333.ico">
+</head>
+<body>
+    <main>
+        <div class="primaryTemplate">
+
+            <div class="formSignin">
+                <form action="/submitLogin" method="post">
+                    <h1>Sign in</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                    <div class="inputSpan">
+                        <div class="inputField">
+                            <img src="../static/imgs/gmail (1).png" alt="" width="20px" height="20px">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <span>E-mail invalid</span>
+                    </div>
+
+                    <div class="forgotPassword">
+                        <div class="inputSpan">
+                            <div class="inputField">
+                                <img src="../static/imgs/cadeado.png" alt="" width="20px" height="20px">
+                                <input type="password" placeholder="Password" oninput="passwordValidate(1)">
+                            </div>
+                            <span>Password invalid</span>
+                        </div>
+                        <a href="#">Forget my password</a>
+                    </div>
+
+                    <div class="inputSpan">
+                        <div class="repeatPassowordInput">
+                            <input type="password" placeholder="Repeat password" oninput="repeatPasswordValidate(2)">
+                        </div>
+                        <span>The password was not repeted</span>
+                    </div>
+
+
+                    <p>social Medias</p>
+
+                    <div class="socialMedias">
+                        <a href="#">
+                            <img src="../static/imgs/google.png" alt="" width="30px" height="30px">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="../static/imgs/instagram.png" alt="" width="30px" height="30px">
+                        </a>
+                        <a href="#">
+                            <img src="../static/imgs/facebook.png" alt="" width="30px" height="30px">
+                        </a>
+                    </div>
+
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+
+            <div class="panel">
+                <h1>Welcome Back</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aspernatur tenetur unde reiciendis recusandae nihil modi explicabo fugiat consequatur veniam? Maiores magna</p>
+            
+                <img src="../static/imgs/GUTZ333.ico" alt="" width="100px" height="100px">
+                
+                <p>Lorem ipsum dolor sit amet</p>
+                <button onclick="showSignUp()">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="secondTemplate">
+
+            <div class="panel">
+                <h1>Hello Friend</h1>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, aspernatur tenetur unde reiciendis recusandae nihil modi explicabo fugiat consequatur veniam? Maiores magna</p>
+                <img src="../static/imgs/GUTZ333.ico" alt="" width="100px" height="100px">
+                <p>Lorem ipsum dolor sit amet</p>
+                <button onclick="showSignIn()">Sign In</button>
+            </div>
+
+            <div class="formSignUp">
+                <form action="submitRegister" method="post">
+                    <h1>Sign Up</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                    <div class="inputSpan">
+                        <div class="inputField">
+                            <img src="../static/imgs/do-utilizador.png" alt="" width="20px" height="20px">
+                            <input type="text" placeholder="Username" name="userName">
+                        </div>
+                        <span>Username Invalid</span>
+                    </div>
+
+                    <div class="inputSpan">
+                        <div class="inputField">
+                            <img src="../static/imgs/gmail (1).png" alt="" width="20px" height="20px">
+                            <input type="email" placeholder="E-mail" name="Email">
+                        </div>
+                        <span>E-mail Invalid</span>
+                    </div>
+                
+                    <div class="forgotPassword">
+                        <div class="inputSpan">
+                            <div class="inputField">
+                                <img src="../static/imgs/cadeado.png" alt="" width="20px" height="20px">
+                                <input type="password" placeholder="Password" oninput="passwordValidate(5)" name="Password">
+                            </div>
+                            <span>The password is invalid</span>
+                        </div>
+                        <a href="#">Forget my password</a>
+                    </div>
+
+                    <div class="inputSpan">
+                        <div class="repeatPassowordInput">
+                            <input type="password" placeholder="Repeat password" oninput="repeatPasswordValidate(6)">
+                        </div>
+                        <span>The password was not repeted</span>
+                    </div>
+
+                    <div class="inputSpan">
+                        <div class="inputField">
+                            <img src="../static/imgs/telefone.png" alt="" width="20px" height="20px">
+                            <input type="tel" placeholder="Number Phone" name="numberPhone">
+                        </div>
+                        <span>Number Phone invalid</span>
+                    </div>
+
+                    <p>social Medias</p>
+
+                    <div class="socialMedias">
+                        <a href="#">
+                            <img src="../static/imgs/google.png" alt="" width="30px" height="30px">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="../static/imgs/instagram.png" alt="" width="30px" height="30px">
+                        </a>
+                        <a href="#">
+                            <img src="../static/imgs/facebook.png" alt="" width="30px" height="30px">
+                        </a>
+                    </div>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../static/node js/login&register.js"></script>
+</body>
+</html>
